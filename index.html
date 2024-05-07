@@ -2,31 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
-    <title>Flowers</title>
+    <style>
+        /* CSS styles can also be embedded here for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .greetings {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .greetings span {
+            display: inline-block;
+            margin: 0 5px;
+            color: #ff69b4; /* Pink color for letters */
+            text-transform: uppercase;
+        }
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            background-color: #ff69b4;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .button a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #d13e85; /* Darker pink on hover */
+        }
+    </style>
 </head>
 <body>
-    <div class="greetings">
-    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
-        <span>H</span>
-        <span>I</span>
-        <span>,</span>
-        <span>M</span>
-        <span>I</span>
-        <span>N</span>
-        <span>A</span>
-    </div>
-    <div class="description">
-        <span>Try la tekann hehe</span>
-    </div>
-    <div class="button">
-        <button>
+    <div class="container">
+        <!-- Greetings -->
+        <div class="greetings">
+            <!-- Customize the greetings -->
+            <span>H</span>
+            <span>I</span>
+            <span></span>
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>A</span>
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <!-- Add a description -->
+            <span>Try la tekann hehe</span>
+        </div>
+
+        <!-- Button -->
+        <div class="button">
+            <!-- Create a button with a link -->
             <a href="flower.html">tekann siniii</a>
-        </button>
-        
+        </div>
     </div>
 </body>
 </html>
