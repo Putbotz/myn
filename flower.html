@@ -7,6 +7,65 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>flowers</title>
+    <style>
+        /* Paste the modified CSS code here */
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ensuring smooth animations */
+        body {
+            overflow: hidden;
+        }
+
+        .flowers {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            transform: translateY(-20%);
+        }
+
+        /* Adjusting the positioning of flowers */
+        .flower {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        /* Ensuring smooth transition */
+        .flower__leaf,
+        .flower__light,
+        .flower__line__leaf {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Adjusting the growth of flowers */
+        .grow-ans {
+            position: absolute;
+            bottom: 0;
+            animation: grow linear var(--d) forwards;
+        }
+
+        /* Defining the grow animation */
+        @keyframes grow {
+            from {
+                transform: scaleY(0);
+            }
+            to {
+                transform: scaleY(1);
+            }
+        }
+
+        /* Ensuring smooth transition for leaves */
+        .leaf {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
 </head>
 <body class="container">
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
