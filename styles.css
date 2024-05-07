@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fde7e7; /* Light pink background */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.message {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Pink color for letters */
+    animation: heartbeat 1.5s infinite;
+}
+
+.love-note {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.heart {
+    color: #ff69b4; /* Pink color for heart */
+}
+
+.footer {
+    margin-top: 50px; /* Adjust the margin-top to move the footer down */
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Floating animation for heart icon */
+.heart-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
